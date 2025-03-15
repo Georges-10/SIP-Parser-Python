@@ -1,0 +1,24 @@
+INVITE sip:bob@ringover.com SIP/2.0
+From: <sip:alice@ringover.com>
+To: <sip:bob@voip.com>
+Call-ID: deb5b63f-7537-4443-8380-aa13b1700651
+CSeq: 1 INVITE
+Contact: <sip:alice@ringover.com:5080>
+User-Agent: ringover-media
+Allow: INVITE, ACK, BYE, CANCEL, OPTIONS, MESSAGE, INFO, UPDATE, REFER, NOTIFY
+Supported: timer, path, replaces
+Allow-Events: talk, hold, conference, refer
+Content-Type: application/sdp
+Content-Disposition: session
+Content-Length: 307
+
+BYE sip:bob@ringover.com SIP/2.0
+From: <sip:alice@ringover.com>
+To: <sip:bob@ringover.com>
+Call-ID: deb5b63f-7537-4443-8380-aa13b1700651
+CSeq: 95120762 BYE
+User-Agent: ringover-media
+Allow: INVITE, ACK, BYE, CANCEL, OPTIONS, MESSAGE, INFO, UPDATE, REFER, NOTIFY
+Supported: timer, path, replaces
+Reason: Q.850;cause=16;text="NORMAL_CLEARING"
+Content-Length: 0

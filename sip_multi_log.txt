@@ -1,0 +1,183 @@
+INVITE sip:bob@example.com SIP/2.0
+From: Alice <sip:alice@example.com>
+To: Bob <sip:bob@example.com>
+Call-ID: 12345@alice.com
+CSeq: 1 INVITE
+User-Agent: AliceSoftPhone v1.0
+Content-Length: 0
+
+100 Trying
+From: Bob <sip:bob@example.com>
+To: Alice <sip:alice@example.com>
+Call-ID: 12345@alice.com
+
+180 Ringing
+From: Bob <sip:bob@example.com>
+To: Alice <sip:alice@example.com>
+Call-ID: 12345@alice.com
+
+200 OK
+From: Bob <sip:bob@example.com>
+To: Alice <sip:alice@example.com>
+Call-ID: 12345@alice.com
+CSeq: 1 INVITE
+Content-Length: 0
+
+ACK sip:bob@example.com SIP/2.0
+From: Alice <sip:alice@example.com>
+To: Bob <sip:bob@example.com>
+Call-ID: 12345@alice.com
+CSeq: 2 ACK
+Content-Length: 0
+
+BYE sip:bob@example.com SIP/2.0
+From: Alice <sip:alice@example.com>
+To: Bob <sip:bob@example.com>
+Call-ID: 12345@alice.com
+CSeq: 3 BYE
+Content-Length: 0
+
+200 OK
+From: Bob <sip:bob@example.com>
+To: Alice <sip:alice@example.com>
+Call-ID: 12345@alice.com
+CSeq: 3 BYE
+Content-Length: 0
+
+INVITE sip:eve@example.com SIP/2.0
+From: Charlie <sip:charlie@example.com>
+To: Eve <sip:eve@example.com>
+Call-ID: 67890@charlie.com
+CSeq: 1 INVITE
+User-Agent: CharlieSoftPhone v2.1
+Content-Length: 0
+
+100 Trying
+From: Eve <sip:eve@example.com>
+To: Charlie <sip:charlie@example.com>
+Call-ID: 67890@charlie.com
+
+180 Ringing
+From: Eve <sip:eve@example.com>
+To: Charlie <sip:charlie@example.com>
+Call-ID: 67890@charlie.com
+
+200 OK
+From: Eve <sip:eve@example.com>
+To: Charlie <sip:charlie@example.com>
+Call-ID: 67890@charlie.com
+CSeq: 1 INVITE
+Content-Length: 0
+
+ACK sip:eve@example.com SIP/2.0
+From: Charlie <sip:charlie@example.com>
+To: Eve <sip:eve@example.com>
+Call-ID: 67890@charlie.com
+CSeq: 2 ACK
+Content-Length: 0
+
+BYE sip:eve@example.com SIP/2.0
+From: Charlie <sip:charlie@example.com>
+To: Eve <sip:eve@example.com>
+Call-ID: 67890@charlie.com
+CSeq: 3 BYE
+Content-Length: 0
+
+200 OK
+From: Eve <sip:eve@example.com>
+To: Charlie <sip:charlie@example.com>
+Call-ID: 67890@charlie.com
+CSeq: 3 BYE
+Content-Length: 0
+
+INVITE sip:david@example.com SIP/2.0
+From: Frank <sip:frank@example.com>
+To: David <sip:david@example.com>
+Call-ID: 11223@frank.com
+CSeq: 1 INVITE
+User-Agent: FrankSoftPhone v3.0
+Content-Length: 0
+
+100 Trying
+From: David <sip:david@example.com>
+To: Frank <sip:frank@example.com>
+Call-ID: 11223@frank.com
+
+180 Ringing
+From: David <sip:david@example.com>
+To: Frank <sip:frank@example.com>
+Call-ID: 11223@frank.com
+
+200 OK
+From: David <sip:david@example.com>
+To: Frank <sip:frank@example.com>
+Call-ID: 11223@frank.com
+CSeq: 1 INVITE
+Content-Length: 0
+
+ACK sip:david@example.com SIP/2.0
+From: Frank <sip:frank@example.com>
+To: David <sip:david@example.com>
+Call-ID: 11223@frank.com
+CSeq: 2 ACK
+Content-Length: 0
+
+BYE sip:david@example.com SIP/2.0
+From: Frank <sip:frank@example.com>
+To: David <sip:david@example.com>
+Call-ID: 11223@frank.com
+CSeq: 3 BYE
+Content-Length: 0
+
+200 OK
+From: David <sip:david@example.com>
+To: Frank <sip:frank@example.com>
+Call-ID: 11223@frank.com
+CSeq: 3 BYE
+Content-Length: 0
+
+INVITE sip:maria@example.com SIP/2.0
+From: George <sip:george@example.com>
+To: Maria <sip:maria@example.com>
+Call-ID: 33445@george.com
+CSeq: 1 INVITE
+User-Agent: GeorgeSoftPhone v4.5
+Content-Length: 0
+
+100 Trying
+From: Maria <sip:maria@example.com>
+To: George <sip:george@example.com>
+Call-ID: 33445@george.com
+
+180 Ringing
+From: Maria <sip:maria@example.com>
+To: George <sip:george@example.com>
+Call-ID: 33445@george.com
+
+200 OK
+From: Maria <sip:maria@example.com>
+To: George <sip:george@example.com>
+Call-ID: 33445@george.com
+CSeq: 1 INVITE
+Content-Length: 0
+
+ACK sip:maria@example.com SIP/2.0
+From: George <sip:george@example.com>
+To: Maria <sip:maria@example.com>
+Call-ID: 33445@george.com
+CSeq: 2 ACK
+Content-Length: 0
+
+BYE sip:maria@example.com SIP/2.0
+From: George <sip:george@example.com>
+To: Maria <sip:maria@example.com>
+Call-ID: 33445@george.com
+CSeq: 3 BYE
+Content-Length: 0
+
+200 OK
+From: Maria <sip:maria@example.com>
+To: George <sip:george@example.com>
+Call-ID: 33445@george.com
+CSeq: 3 BYE
+Content-Length: 0
