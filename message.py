@@ -8,4 +8,4 @@ class IMessage(ABC):
         self.froms=froms
     @abstractmethod
     def display(self):
-        print('Start of the message')
+        print('\n  🔹Type: '+self.type+' '+'\n    From: '+self.froms + '\n    To: '+ self.to)
